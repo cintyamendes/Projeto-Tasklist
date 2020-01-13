@@ -1,0 +1,13 @@
+<div style="text-align:center">
+  <h1>
+    {{ title }}
+  </h1>
+  <img width="100" alt="Logo Tasklist" src="http://www.icons101.com/icon_png/size_512/id_82114/ToDo.png">
+  <p></p>
+</div>
+<div class="container text-center">
+<button (click)="pesquisarTask()" class="btn btn-secondary" style="width:100px;"> Pesquisar </button>
+<button (click)="inserirTask()" class="btn btn-secondary" style="margin-left:10px; width:100px;"> Criar </button>
+</div>
+<hr>
+<router-outlet></router-outlet>

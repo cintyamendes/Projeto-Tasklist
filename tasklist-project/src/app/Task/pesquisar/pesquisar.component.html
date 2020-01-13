@@ -1,0 +1,43 @@
+  <div class="card">
+    <div class="card-header" >
+      <h3>Tasks</h3>
+    </div>
+  </div>
+  <div class="card-body" >
+    <table class="table table-hover text-center" >
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Título</th>
+          <th>Status</th>
+          <th>Descrição</th>
+          <th>Data de Criação</th>
+          <th>Data de Edição</th>
+          <th>Data de Remoção</th>
+          <th>Data de Conclusão</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="text-center" *ngFor="let task of listaTask">
+          <td>{{task.id}}</td>
+          <td>{{task.titulo}}</td>
+          <td>{{task.status}}</td>
+          <td>{{task.descricao}}</td>
+          <td>{{task.dataCriacao}}</td>
+          <td>{{task.dataEdicao}}</td>
+          <td>{{task.dataRemocao}}</td>
+          <td>{{task.dataConclusao}}</td>
+          <td>
+            <button (click)="Editar(task)" class="btn btn-outline-danger" style="margin-left:10px;">Editar</button>
+            <button (click)="Deletar(task)" class="btn btn-outline-danger" style="margin-left: 10px;">Deletar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+
+
+

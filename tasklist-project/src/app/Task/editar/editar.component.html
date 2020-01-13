@@ -1,0 +1,33 @@
+<div class="container col-md-6" >
+  <div class="card">
+    <div class="card-header">
+      <h3>Editar Task</h3>
+    </div>
+    <div class="card-body" >
+        <p>
+          <label for="">Título:*</label>
+          <input [(ngModel)]="task.titulo" name="titulo" type="text" class="form-control">
+        </p>
+        <p>
+          <label for="stat">Status:*</label>
+         <select [(ngModel)]="task.status" name="status" type="text" class="form-control" id="stat">
+            <option value="0">A_FAZER</option>
+            <option value="1">FAZENDO</option>
+            <option value="2">FEITO</option>
+          </select>
+        </p>
+        <p>
+          <label for="">Descrição:*</label>
+          <input [(ngModel)]="task.descricao" name="descricao" type="text" class="form-control">
+        </p>
+    </div>
+    <div style="text-align:center">
+      <button (click)=" Atualizar(task) " class="btn btn-success"  style=" width:100px;">Salvar</button>
+      <p></p>
+    </div>
+
+  </div>
+
+
+
+
